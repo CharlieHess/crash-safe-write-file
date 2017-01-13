@@ -5,7 +5,7 @@ Node.js file operations, even `writeFileSync`, cannot guarantee that the content
 
 From http://www.daveeddy.com/2013/03/26/synchronous-file-io-in-nodejs/:
 
->fs.writeFileSync is synchronous in the sense that it blocks the event loop while it executes. It does NOT ask the Kernel to do a synchronous write to the underlying file system.
+>`fs.writeFileSync` is synchronous in the sense that it blocks the event loop while it executes. It does NOT ask the Kernel to do a synchronous write to the underlying file system.
 
 This is fine for most cases, but if you're trying to write a file that's immune to crashes, you need to get into the [`fsync`](http://blog.httrack.com/blog/2013/11/15/everything-you-always-wanted-to-know-about-fsync/) game. This library borrows graciously from the storage methods in [`nedb`](https://github.com/louischatriot/nedb).
 
@@ -16,11 +16,11 @@ npm install crash-safe-write-file --save
 
 ## Usage
 ``` js
-const crashSafeWriteFile = require('crash-safe-write-file').writeFile;
+const writeFile = require('crash-safe-write-file').writeFile;
 writeFile(filename, data, callback);
 ```
 ``` js
-import {crashSafeWriteFile} from 'crash-safe-write-file';
+import {writeFile} from 'crash-safe-write-file';
 writeFile(filename, data, callback);
 ```
 
