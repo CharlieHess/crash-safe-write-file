@@ -1,0 +1,32 @@
+{
+  "name": "crash-safe-write-file",
+  "version": "0.0.1",
+  "description": "Write a file atomically and use fsync to flush contents",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:CharlieHess/crash-safe-write-file.git"
+  },
+  "keywords": [
+    "write file",
+    "crash safe",
+    "atomic",
+    "fsync"
+  ],
+  "author": "Charlie Hess",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CharlieHess/crash-safe-write-file/issues"
+  },
+  "homepage": "https://github.com/CharlieHess/crash-safe-write-file",
+  "dependencies": {
+    "async": "^2.1.4",
+    "graceful-fs": "^4.1.11",
+    "imurmurhash": "^0.1.4",
+    "mkdirp": "^0.5.1"
+  },
+  "devDependencies": {},
+  "files": [
+    "index.js"
+  ]
+}
