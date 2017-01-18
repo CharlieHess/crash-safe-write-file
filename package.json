@@ -1,6 +1,6 @@
 {
   "name": "crash-safe-write-file",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Write a file atomically and use fsync to flush contents",
   "main": "index.js",
   "repository": {

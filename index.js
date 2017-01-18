@@ -24,7 +24,7 @@ function writeFile(filename, data, callback) {
     (cb) => {
       fs.exists(filename, (exists) => {
         if (exists) {
-          storage.flushToStorage(filename, (err) => { return cb(err); });
+          flushToStorage(filename, (err) => { return cb(err); });
         } else {
           return cb();
         }
