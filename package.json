@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "description": "Write a file atomically and use fsync to flush contents",
   "main": "index.js",
+  "typings": "./index.d.ts",
   "repository": {
     "type": "git",
     "url": "git@github.com:CharlieHess/crash-safe-write-file.git"
@@ -25,8 +26,12 @@
     "imurmurhash": "^0.1.4",
     "mkdirp": "^0.5.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/node": "^7.0.0",
+    "typescript": "^2.1.5"
+  },
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ]
 }
